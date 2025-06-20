@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: whatsapp-groq-bot
+    env: node
+    buildCommand: ""
+    startCommand: bash start.sh
+    plan: free
+    envVars:
+      - key: GROQ_API_KEY
+        value: YOUR_API_KEY_HERE
